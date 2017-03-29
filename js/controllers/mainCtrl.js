@@ -4,4 +4,9 @@ app.controller('MainCtrl', function($scope){
       'Sass',
       'NPM'
     ];
+
+  $scope.addNew = function(){
+    $scope.items.push($scope.newItem);
+    console.log($scope.items);
+  }
 });

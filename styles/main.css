@@ -14,3 +14,9 @@ body {
   transition: 1000ms ease; }
   .logo:hover {
     transform: rotate(360deg); }
+
+button {
+  color: black; }
+
+input {
+  color: black; }

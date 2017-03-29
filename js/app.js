@@ -1,6 +1,7 @@
 var app = angular.module('angularSpa', [
     'ngRoute'
     ]);
+    
 app.config(function($routeProvider){
     $routeProvider
     .when('/home', {
@@ -11,6 +12,14 @@ app.config(function($routeProvider){
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+    .when('/actors', {
+            templateUrl:'views/actors.html',
+            controller:'ActorsCtrl'
+    })
+    .when('/addActor',{
+        templateUrl:'views/addActor.html',
+        controller:'addActorCtrl'
+    })
     .otherwise({
         redirectTo: '/home'
       });

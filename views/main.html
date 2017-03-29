@@ -1,6 +1,8 @@
 <div>
 Plantilla hecha con:
-	<ul ng-repeat="item in items">
-	<li>{{item}}</li>
+	<ul>
+		<li ng-repeat="item in items">{{item}}</li>
 	</ul>
+	<input type="text" ng-model="newItem">
+	<button ng-click="addNew()">Agregar</button>
 </div>
