@@ -20,3 +20,9 @@ button {
 
 input {
   color: black; }
+
+h1 {
+  margin: 60px; }
+
+.navbar {
+  padding-right: 25px; }

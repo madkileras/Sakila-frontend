@@ -1,8 +1,9 @@
-<div>
-Crear actor:
-	<form>
-		<input type="text" ng-model="actor.firstName"/>
-		<input type="text" ng-model="actor.lastName"/>
-		<button ng-click="addActor()">Agregar Actor</button>
-	</form>
-</div>
+<h4>Nuevo actor</h4>
+<form class="form-inline">
+	<div class="form-group">
+		<label class="sr-only">Nuevo actor</label>
+		<input type="text" ng-model="actor.firstName" placeholder="Nombre">
+		<input type="text" ng-model="actor.lastName" placeholder="Apellido">
+	</div>
+	<button ng-click="addActor()">Agregar</button>
+</form>

@@ -1,8 +1,14 @@
-<div>
-Plantilla hecha con:
+<div class="col-md-8">
+<h4> Plantilla hecha con:</h4>
 	<ul>
 		<li ng-repeat="item in items">{{item}}</li>
 	</ul>
-	<input type="text" ng-model="newItem">
-	<button ng-click="addNew()">Agregar</button>
 </div>
+<form class="form-inline col-md-4">
+	<h4>Nueva herramienta</h4>
+	<div class="form-group">
+		<label class="sr-only">Nueva herramienta</label>
+		<input type="text" ng-model="newItem">
+	</div>
+	<button ng-click="addNew()">Agregar</button>
+</form>
